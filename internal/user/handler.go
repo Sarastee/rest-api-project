@@ -3,7 +3,7 @@ package user
 import (
 	"github.com/julienschmidt/httprouter"
 	"net/http"
-	"pet-project/internal/handlers"
+	"rest-api-project/internal/handlers"
 )
 
 var _ handlers.Handler = &handler{}

@@ -72,10 +72,6 @@ func init() {
 		Writer:    []io.Writer{allFile, os.Stdout},
 		LogLevels: logrus.AllLevels,
 	})
-
-	wrt := io.MultiWriter(os.Stdout, allFile)
-	l.SetOutput(wrt)
-
 	l.SetLevel(logrus.TraceLevel)
 
 	e = logrus.NewEntry(l)
